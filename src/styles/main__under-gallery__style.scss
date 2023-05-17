@@ -1,0 +1,35 @@
+.main_under-gallery{
+    width: 85%;
+    margin: 0 auto;
+    .main-text{
+        font-family: "Oswald", Sans-serif;
+        color: #333333;
+        font-size: 40px;
+        font-weight: 400;
+        text-align: center;
+        margin-top: 20px;
+    }
+    .main-line{
+        width: 100%;
+        border: 1px solid #BA9F65;
+    }
+    .viewall{
+        margin: 0 auto;
+        display: flex;
+        width: 151px;
+        height: 46px;
+        background-color: #BA9F65;
+        border: 0px;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        }
+        .viewall-text{
+        font-family: Roboto, sans-serif;
+        font-size: 20px;
+        font-weight: 300;
+        display: flex;
+        color: white;
+        }
+}

@@ -1,0 +1,47 @@
+.main_guide{
+    display: grid;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    width: 85%;
+    grid-template-columns: 32% 32% 32%;
+    gap: 30px;
+
+    .guide-box{
+        width: 100%;
+        height: 407px;
+        margin: 0 auto;
+    }
+    img{
+        width: 100%;
+        display: flex;
+    }
+    .guide-box-text{
+        width: 100%;
+    }
+    .guide-box-main-text{
+        font-family: "Oswald", Sans-serif;
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 1.5em;
+        color: #BA9F65;
+        text-align: center;
+    }
+    .guide-box-subtitle-text{
+        font-family: "Roboto", Sans-serif;
+        line-height: 1.5em;
+        color: #777777;
+        text-align: center;
+        font-size: 16px;
+        font-weight: 400;
+    }
+    .guide-box-button{
+        color: #BA9F65;
+        font-size: 18px;
+        display: flex;
+        font-weight: 600;
+        justify-content: center;
+        font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        font-style: normal;
+        line-height: 0;
+    }
+}

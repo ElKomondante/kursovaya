@@ -1,0 +1,37 @@
+.main_founders{
+    width: 85%;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    .founders-line{
+        width: 100%;
+        border: 1px solid #BA9F65;
+    }
+    .founders-container{
+        display: flex;
+        margin-top: 40px;
+    }
+    .left{
+        width: 65%;
+    }
+    h3{
+        font-family: "Roboto", Sans-serif;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.5;
+        color: #333333;
+        padding: 5px;
+        margin-top: 20px;
+    }
+    .right{
+        width: 35%;
+        display: flex;
+        align-items: center;
+    }
+    img{
+        width:546px ;
+        height: 329px;
+        justify-content: center;
+        margin: 0 auto;
+    }
+}

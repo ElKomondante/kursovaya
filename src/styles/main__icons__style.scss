@@ -1,0 +1,26 @@
+.main_mini-icons{
+justify-content: space-around;
+width: 90%;
+height: 70px;
+margin: 0 auto;
+display: flex;
+    img{
+        width: 100px;
+        height: 70px;
+    }
+    .icons{
+        display: flex;
+        font-family: "Oswald", Sans-serif;
+        font-size: 22px;
+        font-weight: 500;
+        letter-spacing: 0.5px;
+        width: 258px;
+        line-height: 28px;
+        padding: 17px;
+    }
+    p{
+    margin-top: 10px;
+    letter-spacing: 1px;
+    margin-left: 12px;
+    }
+}

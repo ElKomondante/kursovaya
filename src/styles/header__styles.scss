@@ -1,0 +1,72 @@
+body{
+    margin: 0 auto;
+}
+.header_up {
+    width: 100%;
+    background-color: black;
+    display: inline-block;
+    p{
+    vertical-align: middle;
+    font-family: "Roboto", Sans-serif;
+    font-size: 16px;
+    text-align: center;
+    color: white;
+    margin-top: 10px;
+    word-spacing: 2px;
+    height: 17px;
+    }
+}
+.header_main{
+    width: 89%;
+    height: 121px;
+    margin: 0 auto;
+    margin-top: 36px;
+    .header_main_form{
+        display: flex;
+        margin-top: -110px;
+        justify-content: end;
+    }
+    .header_main_img{
+        width: 75px;
+        height: 113px;
+    }
+    .search{
+        width: 250px;
+        height: 32px;
+        background-color: white;
+        border: 1px solid #c2c2c2;
+        font-family: 'Raleway', sans-serif;
+        font-size: 16px;
+    }
+    .sign{
+        font-family: "Roboto", Sans-serif;
+        width: 158px;
+        height: 32px;
+        color: #BA9F65;;
+        margin-top: 6px;
+        text-align: center;
+        font-size: 15px;
+        display: inline-block;
+    }
+    .card{
+        width: 25px;
+        height: 20px;
+    }
+    .header_nav{
+        display: flex;
+        margin: auto;
+        width: 85%;
+        margin-top: 30px;
+        margin-left: 140px;
+        display: flex;
+        justify-content: space-around;
+    }
+    .header_main_nav{
+    font-family: "Roboto";
+    color: #333333;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 2.2rem;
+
+    }
+}

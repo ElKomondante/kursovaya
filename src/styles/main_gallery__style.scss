@@ -1,0 +1,170 @@
+.main_gallery{
+    width: 85%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 289px 600px 1px;
+    grid-gap: 13px;
+    .section:nth-child(4){
+        grid-column-start: 1;
+        grid-column-end: -1;
+    }
+    // .section{
+    // background-color: aqua;
+    // }
+    .section-background1{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(/src/img/Wine-Glasses.jpg);
+    }
+    .section-background2{
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-image: linear-gradient(to top, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(/src/img/Screen-Shot-2021-02-15-at-2.32.25-pm.png);
+        }
+        .section-background3{
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            background-position: center;
+            background-image: linear-gradient(to top, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(/src/img/Delivery-scaled.jpg);
+            }
+            .section-background4{
+                width: 100%;
+                height: 100%;
+                background-size: cover;
+                background-image: url(/src/img/education-1.jpg);
+                }
+                .section-name{
+                    color: #fff;
+                font-family: "Oswald", Sans-serif;
+                font-size: 30px;
+                font-weight: 300;
+                line-height: 8.3em;
+                width: 100%;
+                justify-content: space-around;
+                display: flex;
+                margin: auto;
+                }
+                .button{
+                    color: white;
+                font-family: "Roboto", Sans-serif;
+                font-size: 18px;
+                font-weight: 300;
+                border-style: solid;
+                border-width: 1px 1px 1px 1px;
+                border-color: #BA9F65;
+                border-radius: 0px 0px 0px 0px;
+                width: 141px;
+                height: 40px;
+                justify-content: space-around;
+                display: flex;
+                margin: auto;
+                background-color: #BA9F65;
+                line-height: 2;
+                margin-top: -85;;
+                }
+                .section-name-large{
+                    color: #fff;
+                    font-family: "Oswald", Sans-serif;
+                    font-size: 80px;
+                    font-weight: 350;
+                    line-height: 6.6em;
+                    width: 100%;
+                    justify-content: space-around;
+                    display: flex;
+                    margin: auto;
+                }
+                .button-large{
+                    color: white;
+                    font-family: "Roboto", Sans-serif;
+                    font-size: 20px;
+                    font-weight: 300;
+                    letter-spacing: 2px;
+                    border-style: solid;
+                    border-width: 1px 1px 1px 1px;
+                    border-color: #BA9F65;
+                    border-radius: 0px 0px 0px 0px;
+                    width: 179px;
+                    height: 62px;
+                    justify-content: space-around;
+                    display: flex;
+                    margin: auto;
+                    background-color: #BA9F65;
+                    line-height: 3;
+                    margin-top: -200px;
+                }
+}
+.main_gallery2{
+    width: 85%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 290px;
+    grid-gap: 13px;
+    margin-bottom: 50px;
+    margin-bottom: 80px;
+    .section-background5{
+        width: 100%;
+        height: 100%;
+        background-image: url(/src/img/Bellota.jpg);
+        background-position-y: center;
+        background-size: cover;
+        background-position-x: center;
+        background-size: auto;
+        }
+        .section-background6{
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            background-image: url(/src/img/Liquid-Assets.jpg);
+            }
+            .section-name2{
+                color: #fff;
+                font-family: "Oswald", Sans-serif;
+                font-size: 30px;
+                font-weight: 300;
+                line-height: 8.3em;
+                width: 100%;
+                justify-content: space-around;
+                display: flex;
+                margin: auto;
+            }
+            .button2{
+                color: white;
+                font-family: "Roboto", Sans-serif;
+                font-size: 18px;
+                font-weight: 300;
+                border-style: solid;
+                border-width: 1px 1px 1px 1px;
+                border-color: #BA9F65;
+                border-radius: 0px 0px 0px 0px;
+                width: 141px;
+                height: 40px;
+                justify-content: space-around;
+                display: flex;
+                margin: auto;
+                background-color: #BA9F65;
+                line-height: 2;
+                margin-top: -85;
+            }
+            .button2-big{
+                color: white;
+                font-family: "Roboto", Sans-serif;
+                font-size: 18px;
+                font-weight: 300;
+                border-style: solid;
+                border-width: 1px 1px 1px 1px;
+                border-color: #BA9F65;
+                border-radius: 0px 0px 0px 0px;
+                height: 40px;
+                justify-content: space-around;
+                display: flex;
+                margin: auto;
+                background-color: #BA9F65;
+                line-height: 2;
+                margin-top: -85;
+            }
+}

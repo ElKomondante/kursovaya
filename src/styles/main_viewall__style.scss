@@ -1,0 +1,24 @@
+.main_viewall{
+    width: 100%;
+    height: 86px;
+    display: block;
+    margin-top: 150px;
+    margin-bottom: 50px;
+    .viewall{
+    margin: 0 auto;
+    display: flex;
+    width: 151px;
+    height: 46px;
+    background-color: #BA9F65;
+    border: 0px;
+    justify-content: center;
+    align-items: center;
+    }
+    .viewall-text{
+    font-family: Roboto, sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    display: flex;
+    color: white;
+    }
+}
