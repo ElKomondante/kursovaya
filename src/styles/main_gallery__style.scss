@@ -1,3 +1,4 @@
+@import 'variables__style.scss';
 .main_gallery{
     width: 85%;
     margin: 0 auto;
@@ -9,20 +10,25 @@
         grid-column-start: 1;
         grid-column-end: -1;
     }
-    // .section{
-    // background-color: aqua;
-    // }
     .section-background1{
     width: 100%;
     height: 100%;
     background-size: cover;
     background-image: linear-gradient(to top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(/src/img/Wine-Glasses.jpg);
     }
+    .section-background1:hover{
+        transform: scale(1.1);
+        transition: transform 0.70s;
+    }
     .section-background2{
         width: 100%;
         height: 100%;
         background-size: cover;
         background-image: linear-gradient(to top, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(/src/img/Screen-Shot-2021-02-15-at-2.32.25-pm.png);
+        }
+        .section-background2:hover{
+            transform: scale(1.1);
+            transition: transform 0.70s;
         }
         .section-background3{
             width: 100%;
@@ -31,11 +37,19 @@
             background-position: center;
             background-image: linear-gradient(to top, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(/src/img/Delivery-scaled.jpg);
             }
+            .section-background3:hover{
+                transform: scale(1.1);
+                transition: transform 0.70s;
+            }
             .section-background4{
                 width: 100%;
                 height: 100%;
                 background-size: cover;
                 background-image: url(/src/img/education-1.jpg);
+                }
+                .section-background4:hover{
+                    transform: scale(1.1);
+                    transition: transform 0.70s;
                 }
                 .section-name{
                     color: #fff;
@@ -48,6 +62,16 @@
                 display: flex;
                 margin: auto;
                 }
+                @media (max-width:1070px){
+                    .section-name{
+                        font-size: 25px;
+                    }
+                }
+                @media (max-width:500px){
+                    .section-name{
+                        font-size: 18px;
+                    }
+                }
                 .button{
                     color: white;
                 font-family: "Roboto", Sans-serif;
@@ -55,16 +79,24 @@
                 font-weight: 300;
                 border-style: solid;
                 border-width: 1px 1px 1px 1px;
-                border-color: #BA9F65;
+                border-color: $main-color;
                 border-radius: 0px 0px 0px 0px;
                 width: 141px;
                 height: 40px;
                 justify-content: space-around;
                 display: flex;
                 margin: auto;
-                background-color: #BA9F65;
                 line-height: 2;
                 margin-top: -85;;
+                }
+                .button:hover{
+                    scale: 1.2;
+                }
+                @media (max-width:550px){
+                    .button{
+                        width: 100px;
+                        margin-top: 10px;
+                    }
                 }
                 .section-name-large{
                     color: #fff;
@@ -77,6 +109,16 @@
                     display: flex;
                     margin: auto;
                 }
+                @media (max-width:800px){
+                    .section-name-large{
+                        font-size: 60px;
+                    }
+                }
+                @media (max-width:600px){
+                    .section-name-large{
+                        font-size: 40px;
+                    }
+                }
                 .button-large{
                     color: white;
                     font-family: "Roboto", Sans-serif;
@@ -85,16 +127,28 @@
                     letter-spacing: 2px;
                     border-style: solid;
                     border-width: 1px 1px 1px 1px;
-                    border-color: #BA9F65;
+                    border-color: $main-color;
                     border-radius: 0px 0px 0px 0px;
                     width: 179px;
                     height: 62px;
                     justify-content: space-around;
                     display: flex;
                     margin: auto;
-                    background-color: #BA9F65;
                     line-height: 3;
                     margin-top: -200px;
+                }
+                .button-large:hover{
+                    scale: 1.1;
+                }
+                @media (max-width:800px){
+                    .button-large{
+                        margin-top: 10px;
+                    }
+                }
+                @media (max-width:600px){
+                    .button-large{
+                        width: 150px;;
+                    }
                 }
 }
 .main_gallery2{
@@ -115,11 +169,19 @@
         background-position-x: center;
         background-size: auto;
         }
+        .section-background5:hover{
+            transform: scale(1.1);
+            transition: transform 0.70s;
+        }
         .section-background6{
             width: 100%;
             height: 100%;
             background-size: cover;
             background-image: url(/src/img/Liquid-Assets.jpg);
+            }
+            .section-background6:hover{
+                transform: scale(1.1);
+                transition: transform 0.70s;
             }
             .section-name2{
                 color: #fff;
@@ -132,6 +194,37 @@
                 display: flex;
                 margin: auto;
             }
+            @media (max-width:1070px){
+                .section-name2{
+                    font-size: 25px;
+                    margin-bottom: 10px;
+                }
+            }
+            @media (max-width:900px){
+                .section-name2{
+                    font-size: 20px;
+                    margin-bottom: 50px;
+                }
+            }
+            @media (max-width:730px){
+                .section-name2{
+                    line-height: 12;
+                    font-size: 15px;
+                    margin-bottom: 50px;
+                }
+            }
+            @media (max-width:550px){
+                .section-name2{
+                    line-height: 12;
+                    font-size: 12px;
+                    margin-bottom: 50px;
+                }
+            }
+            @media (max-width:400px){
+                .section-name2{
+                    text-align: center;
+                }
+            }
             .button2{
                 color: white;
                 font-family: "Roboto", Sans-serif;
@@ -139,16 +232,28 @@
                 font-weight: 300;
                 border-style: solid;
                 border-width: 1px 1px 1px 1px;
-                border-color: #BA9F65;
+                border-color: $main-color;
                 border-radius: 0px 0px 0px 0px;
                 width: 141px;
                 height: 40px;
                 justify-content: space-around;
                 display: flex;
                 margin: auto;
-                background-color: #BA9F65;
                 line-height: 2;
                 margin-top: -85;
+            }
+            .button2:hover{
+                scale: 1.2;
+            }
+            @media (max-width:730px){
+                .button2{
+                    width: 120px;
+                }
+            }
+            @media (max-width:400px){
+                .button2{
+                    margin-top: -213px;
+                }
             }
             .button2-big{
                 color: white;
@@ -157,14 +262,33 @@
                 font-weight: 300;
                 border-style: solid;
                 border-width: 1px 1px 1px 1px;
-                border-color: #BA9F65;
+                border-color: $main-color;
                 border-radius: 0px 0px 0px 0px;
                 height: 40px;
                 justify-content: space-around;
                 display: flex;
                 margin: auto;
-                background-color: #BA9F65;
                 line-height: 2;
                 margin-top: -85;
             }
+            .button2-big:hover{
+                scale: 1.2;
+            }
+            @media (max-width:730px){
+                .button2-big{
+                    width: 120px;
+                    height: 70px;
+                }
+            }
+}
+@media (max-width:550px){
+    .main_gallery{
+        width: 95%;
+        gap: 1px;
+    }
+}
+@media (max-width:550px){
+    .main_gallery2{
+        width: 95%;;
+    }
 }

@@ -1,3 +1,4 @@
+@import 'variables__style.scss';
 .main_viewall{
     width: 100%;
     height: 86px;
@@ -9,10 +10,14 @@
     display: flex;
     width: 151px;
     height: 46px;
-    background-color: #BA9F65;
+    background-color: $main-color;
     border: 0px;
     justify-content: center;
     align-items: center;
+    }
+    .viewall:hover{
+        scale: 1.2;
+        background-color: $text-color;
     }
     .viewall-text{
     font-family: Roboto, sans-serif;

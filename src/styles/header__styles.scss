@@ -1,3 +1,4 @@
+@import 'variables__style.scss';
 body{
     margin: 0 auto;
 }
@@ -14,6 +15,11 @@ body{
     margin-top: 10px;
     word-spacing: 2px;
     height: 17px;
+    }
+    @media (max-width: 700px) {
+        p{
+            font-size: 10px;
+        }
     }
 }
 .header_main{
@@ -38,24 +44,40 @@ body{
         font-family: 'Raleway', sans-serif;
         font-size: 16px;
     }
+    @media (max-width: 700px) {
+        .search{
+            width: 150px;
+            height:27px ; 
+        }
+    }
+    @media (max-width: 500px) {
+        .search{
+            display: none;
+        }
+    }
     .sign{
         font-family: "Roboto", Sans-serif;
         width: 158px;
         height: 32px;
-        color: #BA9F65;;
+        color: $main-color;;
         margin-top: 6px;
         text-align: center;
         font-size: 15px;
         display: inline-block;
     }
+    .sign:hover{
+        text-decoration: underline;
+    }
     .card{
         width: 25px;
         height: 20px;
     }
+    .card:hover{
+        transform: scale(1.2);
+    }
     .header_nav{
         display: flex;
         margin: auto;
-        width: 85%;
         margin-top: 30px;
         margin-left: 140px;
         display: flex;
@@ -63,10 +85,28 @@ body{
     }
     .header_main_nav{
     font-family: "Roboto";
-    color: #333333;
+    color: $text-color;
     font-size: 20px;
     font-weight: 300;
     line-height: 2.2rem;
-
     }
+    .header_main_nav:hover{
+        transform: scale(1.2);
+    }
+
+@media (max-width: 1000px) {
+    .header_main_nav{
+        font-size: 15px;
+    }
+}
+@media (max-width: 800px) {
+    .header_main_nav{
+        font-size: 10px;
+    }
+}
+@media (max-width: 500px) {
+    .header_main_nav{
+        display: none;
+    }
+}
 }

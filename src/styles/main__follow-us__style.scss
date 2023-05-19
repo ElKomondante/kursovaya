@@ -1,3 +1,4 @@
+@import 'variables__style.scss';
 .main_follow-us{
     width: 85%;
     margin: 0 auto;
@@ -9,16 +10,33 @@
         font-weight: 400;
     }
     a{
-        color:#BA9F65;
+        color:$main-color;
     }
     .follow-us-container{
         display: grid;
         grid-template-columns: repeat(auto-fill,390px);
         gap: 11px;
     }
-    img{
+    @media (max-width:950px){
+        .follow-us-container{
+            grid-template-columns: 1fr; 
+            margin: 0 auto;
+        }
+    }
+}
+    .followus-img {
         width: 390px;
         height: 395px;
         object-fit: cover;
     }
-}
+    @media (max-width:950px){
+        .followus-img{
+            margin: 0 auto;
+        }
+    }
+    @media (max-width:470px){
+        .followus-img{
+            width: 290px;
+        height: 295px;
+        }
+    }

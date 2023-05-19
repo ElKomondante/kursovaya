@@ -1,3 +1,4 @@
+@import 'variables__style.scss';
 .main_founders{
     width: 85%;
     margin: 0 auto;
@@ -6,6 +7,16 @@
         width: 100%;
         border: 1px solid #BA9F65;
     }
+    @media (max-width:550px){
+        .founders-line{
+            margin-top: 100px;
+        }
+    }
+    @media (max-width:550px){
+        .founders-line{
+            margin-top: 150px;
+        }
+    }
     .founders-container{
         display: flex;
         margin-top: 40px;
@@ -13,13 +24,19 @@
     .left{
         width: 65%;
     }
+    @media (max-width:1200px){
+        .left{
+            text-align: center;
+            width: 100%;
+        }
+    }
     h3{
         font-family: "Roboto", Sans-serif;
         font-size: 16px;
         font-style: normal;
         font-weight: 400;
         line-height: 1.5;
-        color: #333333;
+        color: $text-color;
         padding: 5px;
         margin-top: 20px;
     }
@@ -28,10 +45,27 @@
         display: flex;
         align-items: center;
     }
-    img{
+    @media (max-width:1200px){
+        .right{
+            display: none;
+        }
+    }
+    .founders-img{
         width:546px ;
         height: 329px;
         justify-content: center;
         margin: 0 auto;
     }
+    @media (max-width:1480px){
+        .founders-img{
+            width: 350px;
+            height: 250px;
+        }
+    }
+    @media (max-width:1200px){
+        .founders-img{
+            display: none;
+        }
+    }
+    
 }

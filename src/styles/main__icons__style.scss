@@ -4,9 +4,15 @@ width: 90%;
 height: 70px;
 margin: 0 auto;
 display: flex;
-    img{
+    .icons-img{
         width: 100px;
         height: 70px;
+    }
+    @media (max-width: 900px) {
+        .icons-img{
+            width: 60px;
+            height: 50px;
+        }
     }
     .icons{
         display: flex;
@@ -16,11 +22,25 @@ display: flex;
         letter-spacing: 0.5px;
         width: 258px;
         line-height: 28px;
-        padding: 17px;
+    }
+    @media (max-width: 900px) {
+        .icons-img{
+            font-size: 15px;
+        }
+    }
+    @media (max-width: 700px) {
+        .icons{
+            display: block;
+        }
     }
     p{
     margin-top: 10px;
     letter-spacing: 1px;
     margin-left: 12px;
+    }
+    @media (max-width: 900px) {
+        p{
+            font-size: 15px;
+        }
     }
 }

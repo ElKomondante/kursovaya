@@ -1,3 +1,4 @@
+@import 'variables__style.scss';
 .main_guide{
     display: grid;
     margin: 0 auto;
@@ -11,6 +12,10 @@
         height: 407px;
         margin: 0 auto;
     }
+    .guide-box:hover{
+        transform: scale(1.1);
+        transition: transform 0.70s;
+    }
     img{
         width: 100%;
         display: flex;
@@ -23,7 +28,7 @@
         font-size: 24px;
         font-weight: 500;
         line-height: 1.5em;
-        color: #BA9F65;
+        color: $main-color;
         text-align: center;
     }
     .guide-box-subtitle-text{
@@ -35,7 +40,7 @@
         font-weight: 400;
     }
     .guide-box-button{
-        color: #BA9F65;
+        color: $main-color;
         font-size: 18px;
         display: flex;
         font-weight: 600;
@@ -43,5 +48,16 @@
         font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
         font-style: normal;
         line-height: 0;
+    }
+    @media (max-width:500px){
+        .guide-box-button{
+            font-size: 12px;
+        }
+    }
+}
+@media (max-width:860px){
+    .main_guide{
+        width: 80%;
+        gap: 1px;
     }
 }
